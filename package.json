@@ -2,7 +2,27 @@
   "name": "sample-http",
   "version": "0.0.1",
   "dependencies": {
+    "async": "^3.2.0",
     "benchmark": "^2.1.4",
-    "jimp": "^0.16.1"
-  }
+    "fs": "0.0.1-security",
+    "jimp": "^0.16.1",
+    "sharp": "^0.27.2"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soph1ia/image-processing-NJ-G.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Soph1ia/image-processing-NJ-G/issues"
+  },
+  "homepage": "https://github.com/Soph1ia/image-processing-NJ-G#readme",
+  "description": ""
 }

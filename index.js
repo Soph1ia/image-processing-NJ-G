@@ -5,11 +5,9 @@
  * @param {!express:Response} res HTTP response context.
  */
 
- const myFunction = require('./image-processing');
+ const myFunction = require('./Testing/Jimp-Testing-processing');
  const Benchmark = require('benchmark');
  const suite = new Benchmark.Suite;
-
-
 
 exports.helloWorld = (req, res) => {
   output = benchmarking();
@@ -19,7 +17,7 @@ exports.helloWorld = (req, res) => {
 function benchmarking() {
   
   suite.add(`Processing the image`, function() {
-    myFunction.image_processing(number)
+    myFunction.image_processing()
   })
   .on('cycle', function(event){
     console.log(String(event.target))
@@ -31,5 +29,8 @@ function benchmarking() {
 
 return `Image processing completed successfully !`
 }
+
+//To run locally uncomment this: 
+benchmarking()
 
 
