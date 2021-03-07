@@ -5,7 +5,7 @@
  * @param {!express:Response} res HTTP response context.
  */
 
- const myFunction = require('./Testing/Jimp-Testing-processing');
+ const myFunction = require('./image_processing');
  const Benchmark = require('benchmark');
  const suite = new Benchmark.Suite;
 
@@ -31,6 +31,6 @@ return `Image processing completed successfully !`
 }
 
 //To run locally uncomment this: 
-benchmarking()
+// benchmarking()
 
 

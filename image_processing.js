@@ -1,19 +1,16 @@
 const sharp = require("sharp");
 
 
-async function image_processing() {
+function image_processing() {
      sharp.cache("false")
-    await sharp('image.jpg').resize({height: 1000, width: 1024}).toFile('image.jpg')
+    sharp('image.jpg').resize({height: 1000, width: 1024}).toFile('image_resized.jpg')
     .then( function(newFileInfo){
         return "image processed Successfully";
-        
     })
     .catch( function (err) {
-
+        console.log(err);
         return "Error received";
     })
-
-  
 }
 
 module.exports = {
