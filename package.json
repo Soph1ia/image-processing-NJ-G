@@ -2,9 +2,7 @@
   "name": "sample-http",
   "version": "0.0.1",
   "dependencies": {
-    "async": "^3.2.0",
     "benchmark": "^2.1.4",
-    "fs": "0.0.1-security",
     "jimp": "^0.16.1",
     "sharp": "^0.27.2"
   },
